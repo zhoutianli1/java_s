@@ -132,13 +132,14 @@ public class sort {
      */
     public static void shellSort(int[] arr)
     {
-        int len = arr.length, tmp, j;
+        int len = arr.length;
         for (int gap = len / 2; gap >= 1; gap = gap / 2)   //每次都将gap的值减半
         {
             for (int i = gap; i < len; i++)     //对于gap所分的每一个组
             {
+                int  tmp, j;
                 tmp = arr[i];
-                for(j=i-gap;j>=0;j=j-gap)  //进行插入排序
+                for(j=i-gap;j>0;j=j-gap)  //进行插入排序
                 {
                     if(tmp<arr[j-1])
                     {

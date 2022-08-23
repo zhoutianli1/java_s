@@ -18,7 +18,7 @@ public class mergeSort  //时间复杂度 O（nlogn）
         int[] tmp = new int[arr.length];    //新建一个临时数组存放
         int len = arr.length;
         mergeSort(arr,0,len-1,tmp);
-        System.out.println(Arrays.toString(arr));
+        System.out.println("\n最终排序结果："+Arrays.toString(arr));
     }
 
     //核心代码： 如何合并
